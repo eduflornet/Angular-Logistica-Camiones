@@ -1,0 +1,43 @@
+﻿<div class="panel panel-primary">
+    <div class="panel-heading"
+         style="font-size:large">
+        {{::vm.title}}
+    </div>
+    <div class="panel-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>
+                        <button type="button"
+                                class="btn btn-primary"
+                                ng-click="vm.toggleImage()">
+                            {{vm.showImage ? "Hide" : "Show"}} Image
+                        </button>
+                    </td>
+                    <td>Zona</td>
+                    <td>Dias asignados</td>
+                    <td>Matricula</td>
+                    <td>Marca</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="camion in vm.camiones">
+                    <td>
+                        <img ng-if="vm.showImage"
+                             ng-src="{{camion.imageUrl}}"
+                             style="width:50px;margin:2px"
+                             title="{{camion.marca}}">
+                    </td>
+                    <td>
+                        <a ng-href="#camionDetail/{{camion.IdCamion}}">
+                            {{ camion.Modelo}}
+                        </a>
+                    </td>
+                    <td>{{ camion.zona }}</td>
+                    <td>{{ camion.diasAsignados }}</td>
+                    <td>{{ camion.matricula }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Gestion de Camiones SANFOR</title>
+
+    <!-- Style sheets -->
+    <link href="styles/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body ng-app="camionManagement">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">Gestión de Camiones</div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <ng-view></ng-view>
+    </div>
+
+    <!-- Library Scripts -->
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-resource.js"></script>
+    <script src="scripts/angular-mocks.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    
+    <!-- Application Script -->
+    <script src="app/app.js"></script>
+    
+    <!-- Domain Classes -->
+    <script src="app/camiones/camiones.js"></script>
+    
+    <!-- Services -->
+    <script src="app/common/services/common.services.js"></script>
+    <script src="app/common/services/dataAccessService.js"></script>
+    <script src="app/common/services/camionResourceMock.js"></script>
+    
+    <!-- Controllers -->
+    <script src="app/camiones/camionListCtrl.js"></script>
+    <script src="app/camiones/camionDetailCtrl.js"></script>
+</body>
+
+</html>
