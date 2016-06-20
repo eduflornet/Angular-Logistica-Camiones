@@ -129,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app\app.ts" />
+    <TypeScriptCompile Include="app\camiones\camion.ts" />
     <TypeScriptCompile Include="app\camiones\camionDetailCtrl.ts" />
     <TypeScriptCompile Include="app\camiones\camionListCtrl.ts" />
     <TypeScriptCompile Include="app\common\services\camionResourceMock.ts" />

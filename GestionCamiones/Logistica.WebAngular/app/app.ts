@@ -22,4 +22,5 @@
             })
             .otherwise("/camionList");
     }
+    
 }
