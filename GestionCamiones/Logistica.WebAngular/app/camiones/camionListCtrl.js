@@ -21,3 +21,4 @@ var app;
             .controller("CamionListCtrl", CamionListCtrl);
     })(camionList = app.camionList || (app.camionList = {}));
 })(app || (app = {}));
+//# sourceMappingURL=camionListCtrl.js.map

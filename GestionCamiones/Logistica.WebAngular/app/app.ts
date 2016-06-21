@@ -1,5 +1,5 @@
 ﻿module app {
-    var main = angular.module("CamionManagement",
+    var main = angular.module("camionManagement",
         ["ngRoute",
             "common.services",
             "camionResourceMock"]);

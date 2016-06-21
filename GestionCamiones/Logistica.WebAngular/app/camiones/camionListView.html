@@ -15,14 +15,10 @@
             </thead>
             <tbody>
                 <tr ng-repeat="camion in vm.camiones">
-                    <td>
-                        <a ng-href="#camionDetail/{{camion.IdCamion}}">
-                            {{ camion.Modelo}}
-                        </a>
-                    </td>
-                    <td>{{ camion.zona }}</td>
+                    <td> {{ camion.zona }} </td>
                     <td>{{ camion.diasAsignados }}</td>
                     <td>{{ camion.matricula }}</td>
+                    <td>{{ camion.marca }}</td>
                 </tr>
             </tbody>
         </table>

@@ -1,6 +1,6 @@
 var app;
 (function (app) {
-    var main = angular.module("CamionManagement", ["ngRoute",
+    var main = angular.module("camionManagement", ["ngRoute",
         "common.services",
         "camionResourceMock"]);
     main.config(routeConfig);
@@ -18,3 +18,4 @@ var app;
             .otherwise("/camionList");
     }
 })(app || (app = {}));
+//# sourceMappingURL=app.js.map

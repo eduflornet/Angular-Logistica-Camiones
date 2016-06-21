@@ -16,3 +16,4 @@ var app;
         domain.Camion = Camion;
     })(domain = app.domain || (app.domain = {}));
 })(app || (app = {}));
+//# sourceMappingURL=camion.js.map
